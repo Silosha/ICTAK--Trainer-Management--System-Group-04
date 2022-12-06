@@ -37,7 +37,7 @@ public class LoginPage {
 	@CacheLookup
 	WebElement LogoutBtn;
 	
-	@FindBy(xpath="//*[@id=\"navbarNav\"]/ul/li[2]/a")
+	@FindBy(linkText="Login")
 	@CacheLookup
 	WebElement Login;
 	
