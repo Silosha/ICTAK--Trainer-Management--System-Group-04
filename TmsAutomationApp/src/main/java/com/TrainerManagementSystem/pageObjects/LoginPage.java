@@ -29,11 +29,11 @@ public class LoginPage {
 	@CacheLookup
 	WebElement Pwd;
 	
-	@FindBy(xpath="/html/body/app-root/app-login/main/form/button")
+	@FindBy(xpath="//button[@type=\"submit\")
 	@CacheLookup
 	WebElement LoginBtn;
 	
-	@FindBy(xpath="//button[@type=\"submit\"]")
+	@FindBy(xpath="//*[@id=\"navbarNav\"]/ul/li[4]/a"]")
 	@CacheLookup
 	WebElement LogoutBtn;
 	
