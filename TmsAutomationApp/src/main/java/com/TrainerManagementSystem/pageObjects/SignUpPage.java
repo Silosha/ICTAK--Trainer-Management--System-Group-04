@@ -78,7 +78,7 @@ WebDriver localdriver;
 	WebElement SubmitBtn;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"navbarNav\"]/ul/li[3]/a")
+	@FindBy(how=How.LINK_TEXT,using="Sign Up/Enroll")
 	WebElement SignUp;
 	
 	public void SignUp() {
