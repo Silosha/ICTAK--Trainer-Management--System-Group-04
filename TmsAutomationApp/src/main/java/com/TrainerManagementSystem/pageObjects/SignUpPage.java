@@ -26,51 +26,51 @@ WebDriver localdriver;
 	}
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"name\"]")
+	@FindBy(how=How.ID,using="name")
 	WebElement Name;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"email\"]")
+	@FindBy(how=How.ID,using="email")
 	WebElement Email;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"phone\"]")
+	@FindBy(how=How.ID,using="phone")
 	WebElement Mobileno;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"address\"]")
+	@FindBy(how=How.ID,using="address")
 	WebElement Address;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"h_qualification\"]")
+	@FindBy(how=How.ID,using="h_qualification")
 	WebElement Qualification;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"skillSet\"]")
+	@FindBy(how=How.ID,using="skillSet")
 	WebElement SkillSet;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"company_name\"]")
+	@FindBy(how=How.ID,using="company_name")
 	WebElement Companyname;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"designation\"]")
+	@FindBy(how=How.ID,using="designation")
 	WebElement CurrentDesignation;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="/html/body/app-root/app-sign-up/form/div[5]/div[1]/input")
+	@FindBy(how=How.XPATH,using="//input[@type=\"file\"]")
 	WebElement PhotoUpload;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="/html/body/app-root/app-sign-up/form/div[5]/div[2]/ng-multiselect-dropdown/div/div[1]/span/span[1]")
+	@FindBy(how=How.XPATH,using="//span[text()=\"Choose Courses\"]")
 	WebElement courses;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"password\"]")
+	@FindBy(how=How.ID,using="password")
 	WebElement password;
 	
 	@CacheLookup
-	@FindBy(how=How.XPATH,using="//*[@id=\"re_password\"]")
+	@FindBy(how=How.ID,using="re_password")
 	WebElement Repassword;
 	
 	@CacheLookup
