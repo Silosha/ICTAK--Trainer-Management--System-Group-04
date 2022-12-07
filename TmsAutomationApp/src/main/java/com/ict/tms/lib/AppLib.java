@@ -2,6 +2,9 @@ package com.ict.tms.lib;
 
 import org.openqa.selenium.WebDriver;
 
+/**
+ * @author Silosha
+ */
 public class AppLib {
 
 	private WebDriver driver;

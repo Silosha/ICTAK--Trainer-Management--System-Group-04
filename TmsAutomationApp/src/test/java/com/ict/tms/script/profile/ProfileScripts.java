@@ -6,6 +6,11 @@ import com.ict.tms.config.AbstractBaseTest;
 import com.ict.tms.pages.LoginPage;
 import com.ict.tms.pages.ProfilePage;
 
+/**
+ * 
+ * @author Silosha
+ *
+ */
 public class ProfileScripts extends AbstractBaseTest{
 		
 	@Test

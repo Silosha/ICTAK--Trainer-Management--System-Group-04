@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ict.tms.elements.LoginPageElements;
 
+/**
+ * @author Silosha
+ */
 public class LoginPage {
 
 	private WebDriver webDriver;

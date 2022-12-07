@@ -6,9 +6,12 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+/**
+ * 
+ * @author Silosha
+ *
+ */
 public class ExcelUtil {
-	
-	
 	
 	private static XSSFWorkbook excelBook;
 	

@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author Silosha
+ */
 public class ProfilePageElements {
 
 	private WebDriver driver;

@@ -1,9 +1,13 @@
+
 package com.ict.tms.elements;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author Silosha
+ */
 public class EditProfileElements {
 
 	private WebDriver driver;

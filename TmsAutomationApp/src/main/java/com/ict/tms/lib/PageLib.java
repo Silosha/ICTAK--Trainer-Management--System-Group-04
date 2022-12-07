@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import com.ict.tms.pages.LoginPage;
 import com.ict.tms.pages.ProfilePage;
 
+/**
+ * @author Silosha
+ */
 public class PageLib {
 
 	private WebDriver driver;

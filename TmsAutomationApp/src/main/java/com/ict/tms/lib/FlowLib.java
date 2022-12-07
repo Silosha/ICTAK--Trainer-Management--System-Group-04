@@ -5,6 +5,9 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * @author Silosha
+ */
 public class FlowLib {
 	
 	private WebDriver driver;

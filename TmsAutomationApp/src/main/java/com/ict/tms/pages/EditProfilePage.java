@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 
 import com.ict.tms.elements.EditProfileElements;
 
+/**
+ * @author Silosha
+ */
 public class EditProfilePage {
 
 	private WebDriver driver;

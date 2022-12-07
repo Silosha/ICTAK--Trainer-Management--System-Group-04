@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 
 import com.ict.tms.elements.ProfilePageElements;
 
+/**
+ * @author Silosha
+ */
 public class ProfilePage {
 	
 	private WebDriver webDriver;

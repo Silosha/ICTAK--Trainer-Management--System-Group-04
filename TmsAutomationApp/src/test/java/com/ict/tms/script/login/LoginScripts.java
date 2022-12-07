@@ -11,6 +11,11 @@ import com.ict.tms.config.AbstractBaseTest;
 import com.ict.tms.pages.LoginPage;
 import com.ict.tms.util.ExcelUtil;
 
+/**
+ * 
+ * @author Silosha
+ *
+ */
 public class LoginScripts extends AbstractBaseTest {
 	
 	private LoginPage login() {
