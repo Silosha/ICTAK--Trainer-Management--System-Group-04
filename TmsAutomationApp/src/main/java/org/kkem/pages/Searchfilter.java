@@ -1,5 +1,7 @@
 package org.kkem.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +19,7 @@ public class Searchfilter {
 	WebElement search;
 	public Searchfilter(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		this.wait = new WebDriverWait(driver, 60);
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	}
 	public void allocationsearchbyname(String fname) {
 		try {

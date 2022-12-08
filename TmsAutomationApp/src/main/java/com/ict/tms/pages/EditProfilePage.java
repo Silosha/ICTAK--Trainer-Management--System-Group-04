@@ -17,48 +17,48 @@ public class EditProfilePage {
 		this.editProfileElements = new EditProfileElements(this.driver);
 	}
 
-	public WebDriver getDriver() {
-		return driver;
-	}
-
-	public EditProfileElements getEditProfileElements() {
+	private EditProfileElements ofEditProfileElements() {
 		return editProfileElements;
 	}
 
 	public void sendName(String name) {
-		getEditProfileElements().getName().sendKeys(name);
+		ofEditProfileElements().getName().sendKeys(name);
 	}
 	
 	public void sendPhone(String phone) {
-		getEditProfileElements().getPhone().sendKeys(phone);
+		ofEditProfileElements().getPhone().sendKeys(phone);
 	}
 	
 	public void sendAddress(String address) {
-		getEditProfileElements().getAddress().sendKeys(address);
+		ofEditProfileElements().getAddress().sendKeys(address);
 	}
 	
 	public void sendEmail(String email) {
-		getEditProfileElements().getEmail().sendKeys(email);
+		ofEditProfileElements().getEmail().sendKeys(email);
 	}
 	
 	public void sendQualification(String qualification) {
-		getEditProfileElements().getQualification().sendKeys(qualification);
+		ofEditProfileElements().getQualification().sendKeys(qualification);
 	}
 	
 	public void sendCompany(String company) {
-		getEditProfileElements().getCompany().sendKeys(company);
+		ofEditProfileElements().getCompany().sendKeys(company);
 	}
 	
 	public void sendDesignation(String designation) {
-		getEditProfileElements().getDesignation().sendKeys(designation);
+		ofEditProfileElements().getDesignation().sendKeys(designation);
 	}
 	
 	public void sendSkillSets(String skillSets) {
-		getEditProfileElements().getSkillSets().sendKeys(skillSets);
+		ofEditProfileElements().getSkillSets().sendKeys(skillSets);
+	}
+	
+	public void sendProfileImage(String image) {
+		ofEditProfileElements().getProfileImage().sendKeys(image);
 	}
 	
 	public void clickEditButton() {
-		getEditProfileElements().getEditButton().click();
+		ofEditProfileElements().getEditButton().click();
 	}
 
 }

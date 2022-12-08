@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 
 import com.ict.tms.config.AbstractBaseTest;
 import com.ict.tms.pages.LoginPage;
-import com.ict.tms.util.ExcelUtil;
 
 /**
  * 
@@ -19,29 +18,26 @@ import com.ict.tms.util.ExcelUtil;
 public class LoginScripts extends AbstractBaseTest {
 	
 	private LoginPage login() {
-		return App().Page().login();
+		return App().Page().ofLogin();
 	}
 	
-	@Test
-	public void verifyValidLogin() {
+	@Test(dataProvider = "loginCredentials", dataProviderClass = com.ict.tms.config.TmsTestDataProvider.class)
+	public void verifyValidLogin(String email, String pwd, String url) {
 		
-		String emailId = ExcelUtil.getCellData(0, 0);
-		String password = ExcelUtil.getCellData(0, 1);
+		Flow().navigateTo(url);
 		
-		App().Flow().navigateTo("https://trainermanagement.herokuapp.com/");
+		login().sendEmailAddress(email);
 		
-		login().sendEmailAddress(emailId);
-		
-		login().sendPassword(password);
+		login().sendPassword(pwd);
 		
 		login().clickLogin();		
 		
-		WebDriverWait wait = App().Flow().ofWebDriverWait(10L);
+		WebDriverWait wait = Flow().ofWebDriverWait(10L);
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("app-admindash")));
-		// actual url
+		
 		String expected = "https://trainermanagement.herokuapp.com/profile";
-		String currentUrl = App().Flow().getCurrentUrl();
+		String currentUrl = Flow().getCurrentUrl();
 		
 		Assert.assertEquals(expected, currentUrl);
 	}

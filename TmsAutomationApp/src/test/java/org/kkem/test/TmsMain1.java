@@ -1,12 +1,12 @@
-package org.kkem.tmstests;
+package org.kkem.test;
 
 import java.io.IOException;
 import java.time.Duration;
 //import java.util.concurrent.TimeUnit;
 
 import org.kkem.excelutilities.Excelutility1;
-import org.kkem.pages.Loginpage;
 import org.kkem.pages.Myallocdetails;
+import org.kkem.pages.vidya.Loginpage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import org.testng.Reporter;
@@ -14,6 +14,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+/**
+ * 
+ * @author Vidya
+ *
+ */
 @Test
 public class TmsMain1 {
 	

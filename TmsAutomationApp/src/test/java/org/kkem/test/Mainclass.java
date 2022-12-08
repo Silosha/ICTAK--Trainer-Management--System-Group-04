@@ -1,19 +1,22 @@
 package org.kkem.test;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeTest;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.kkem.excelutilities.ExcelUtilities;
-import org.kkem.pageclass.ViewalPage;
-import org.kkem.pageclass.LoginPage;
+import org.kkem.pages.LoginPage;
+import org.kkem.utilities.ExcelUtilities;
+//import org.kkem.excelutilities.ExcelUtilities;
+//import org.kkem.pageclass.ViewalPage;
+//import org.kkem.pageclass.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.ict.tms.sneha.ViewalPage;
 
 public class Mainclass {
 
@@ -33,7 +36,7 @@ public class Mainclass {
 			String fname = oexxcelutility.getExcelData(rowN0, "fname");
 
 			LoginPage ologin = new LoginPage(driver);
-			ologin.logindetails2(username, pwd);
+			ologin.logindetails(username, pwd);
 			Reporter.log("<br>teststeppass::Sucessfully validated login page</br>");
 
 			ViewalPage oview = new ViewalPage(driver);

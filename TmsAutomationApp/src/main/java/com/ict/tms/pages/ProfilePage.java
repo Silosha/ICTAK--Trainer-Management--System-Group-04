@@ -17,43 +17,47 @@ public class ProfilePage {
 		this.profilePageElements = new ProfilePageElements(this.webDriver);
 	}
 	
+	private ProfilePageElements ofProfilePageElements() {
+		return profilePageElements;
+	}
+	
 	public String getTrainerName() {
-		return profilePageElements.getName().getText();
+		return ofProfilePageElements().getName().getText();
 	}
 	
 	public String getTrainerEmail() {
-		return profilePageElements.getEmail().getText();
+		return ofProfilePageElements().getEmail().getText();
 	}
 	
 	public String getTrainerAddress() {
-		return profilePageElements.getAddress().getText();
+		return ofProfilePageElements().getAddress().getText();
 	}
 	
 	public String getTrainerPhone() {
-		return profilePageElements.getPhone().getText();
+		return ofProfilePageElements().getPhone().getText();
 	}
 	
 	public String getTraineCompany() {
-		return profilePageElements.getCompany().getText();
+		return ofProfilePageElements().getCompany().getText();
 	}
 	
 	public String getTrainerQualification() {
-		return profilePageElements.getQualification().getText();
+		return ofProfilePageElements().getQualification().getText();
 	}
 	
 	public String getTrainerDesignation() {
-		return profilePageElements.getDesignation().getText();
+		return ofProfilePageElements().getDesignation().getText();
 	}
 	
 	public String getTrainerSkillsets() {
-		return profilePageElements.getSkillSets().getText();
+		return ofProfilePageElements().getSkillSets().getText();
 	}
 	
 	public String getTrainerProfileImage() {
-		return profilePageElements.getProfileImage().getText();
+		return ofProfilePageElements().getProfileImage().getText();
 	}
 	
 	public void clickEditProfileButton() {
-		profilePageElements.getEditProfileButton().click();
+		ofProfilePageElements().getEditProfileButton().click();
 	}
 }
