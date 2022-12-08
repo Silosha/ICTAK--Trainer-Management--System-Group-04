@@ -18,11 +18,11 @@ public class ExcelUtil {
 	private XSSFWorkbook excelBook;
 
 	private XSSFSheet excelSheet;
-	
+
 	public ExcelUtil(String excelFilePath) {
 		initWorkBook(excelFilePath);
 	}
-	
+
 	private void initWorkBook(String excelFilePath) {
 		String absPath = System.getProperty("user.dir") + File.separator + excelFilePath;
 		try (FileInputStream excelFile = new FileInputStream(absPath)) {
@@ -43,20 +43,21 @@ public class ExcelUtil {
 		}
 		return cellValue;
 	}
-	
+
 	public String getCellData(int sheetIndex, int rowNum, String colName) {
 		String cellValue = "";
-		DataFormatter dataFormater = new DataFormatter();		
-		try {			
-			excelSheet = excelBook.getSheetAt(sheetIndex);			
+		DataFormatter dataFormater = new DataFormatter();
+		try {
+			excelSheet = excelBook.getSheetAt(sheetIndex);
 			int colNum = -1;
 			XSSFRow row = excelSheet.getRow(0);
-            for(int i = 0; i < row.getLastCellNum(); i++)
-            {
-                if(row.getCell(i).getStringCellValue().trim().equals(colName.trim()))
-                    colNum = i;
-            }
-			cellValue = dataFormater.formatCellValue(excelSheet.getRow(rowNum).getCell(colNum));
+			for (int i = 0; i < row.getLastCellNum(); i++) {
+				if (row.getCell(i).getStringCellValue().trim().equals(colName.trim())) {
+					colNum = i;
+					cellValue = dataFormater.formatCellValue(excelSheet.getRow(rowNum).getCell(colNum));
+					break;
+				}
+			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
