@@ -1,8 +1,6 @@
 package com.ict.tms.script.login;
 
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -41,7 +39,7 @@ public class LoginScripts extends AbstractBaseTest {
 		String expected = "https://trainermanagement.herokuapp.com/profile";
 		String currentUrl = Flow().getCurrentUrl();
 		
-		AssertJUnit.assertEquals(expected, currentUrl);
+		Assert.assertEquals(expected, currentUrl);
 	}
 
 }

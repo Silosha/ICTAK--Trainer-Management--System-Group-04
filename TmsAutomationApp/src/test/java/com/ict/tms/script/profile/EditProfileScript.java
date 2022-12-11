@@ -1,7 +1,5 @@
 package com.ict.tms.script.profile;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -75,15 +73,15 @@ public class EditProfileScript extends AbstractBaseTest{
 		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(url+AppConstants.URL_PROFILE));		
 		
 		// Asserting the trainer profile details
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerName(), tdName);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTraineCompany(), tdCompany);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerAddress(), tdAddress);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerDesignation(), tdDesignation);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerEmail(), tdEmail);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerPhone(), tdPhoneNo);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerProfileImage(), tdProfileImage);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerQualification(), tdQualification);
-		AssertJUnit.assertEquals(App().Page().ofProfile().getTrainerSkillsets(), tdSkills);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerName(), tdName);
+		Assert.assertEquals(App().Page().ofProfile().getTraineCompany(), tdCompany);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerAddress(), tdAddress);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerDesignation(), tdDesignation);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerEmail(), tdEmail);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerPhone(), tdPhoneNo);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerProfileImage(), tdProfileImage);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerQualification(), tdQualification);
+		Assert.assertEquals(App().Page().ofProfile().getTrainerSkillsets(), tdSkills);
 		
 		// Trainer logout
 		App().Page().ofHeadSection().clickogout();
