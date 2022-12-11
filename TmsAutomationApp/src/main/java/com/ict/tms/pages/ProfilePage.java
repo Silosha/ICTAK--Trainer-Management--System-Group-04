@@ -60,4 +60,8 @@ public class ProfilePage {
 	public void clickEditProfileButton() {
 		ofProfilePageElements().getEditProfileButton().click();
 	}
+	
+	public boolean isEditProfileButtonVisible() {
+		return ofProfilePageElements().getEditProfileButton().isDisplayed();
+	}
 }

@@ -84,7 +84,7 @@ public class EditProfileScript extends AbstractBaseTest{
 		Assert.assertEquals(App().Page().ofProfile().getTrainerSkillsets(), tdSkills);
 		
 		// Trainer logout
-		App().Page().ofHeadSection().clickogout();
+		App().Page().ofHeadSection().clickLogout();
 		
 		//Home page will be rendered
 		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(url));

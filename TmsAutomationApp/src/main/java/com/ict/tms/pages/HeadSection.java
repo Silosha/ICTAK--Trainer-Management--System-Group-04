@@ -18,7 +18,7 @@ public class HeadSection {
 		return headerElements;
 	}
 	
-	public void clickogout() {
+	public void clickLogout() {
 		ofHeaderElements().getLogout().click();
 	}
 	
