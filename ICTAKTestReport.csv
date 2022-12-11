@@ -1,0 +1,58 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1670604506166,342,Launch-308,200,OK,Launch 1-1,text,true,,2751,348,1,1,http://64.227.132.109/,341,0,71
+1670604506578,153,RegisterPartnership-631,200,OK,RegisterPartnership 4-1,text,true,,277,736,1,18,http://64.227.132.109/api/PartnershipApplication,153,0,64
+1670604506648,97,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-1,text,true,,278,528,2,19,http://64.227.132.109/api/CorporateApplication,97,0,50
+1670604506660,121,"DownloadAcademicMembership-1,219",200,OK,DownloadAcademicMembership 11-1,text,true,,607,329,1,18,http://64.227.132.109/api/academic,121,0,38
+1670604506676,111,"AddIndustrialPartners-1,252",200,OK,AddIndustrialPartners 14-1,text,true,,2235,331,1,17,http://64.227.132.109/api/industry,111,0,38
+1670604506732,60,RegisterPartnership-632,200,OK,RegisterPartnership 4-1,text,true,,2783,375,1,17,http://64.227.132.109/LandingPage/partnershipform,60,0,0
+1670604506679,120,"AddKnowledgePartners-1,258",200,OK,AddKnowledgePartner 15-1,text,true,,2150,331,1,16,http://64.227.132.109/api/knowledge,119,0,40
+1670604506799,6,"AddKnowledgePartners-1,280",Non HTTP response code: java.io.FileNotFoundException,Non HTTP response message: C:\Users\HP\Desktop\Jmeter\download.png (The system cannot find the file specified),AddKnowledgePartner 15-1,text,false,,2588,0,1,16,http://64.227.132.109/api/knowledgeadmin,0,0,0
+1670604506625,190,"AddNewTestimony-1,214",200,OK,AddNewTestimony 9-1,text,true,,15040,337,1,15,http://64.227.132.109/api/CourseTestimony,154,0,39
+1670604506686,132,"AddPatron-1,281",200,OK,AddPatron 16-1,text,true,,1980,327,1,15,http://64.227.132.109/api/patrons,131,0,38
+1670604506816,6,"AddNewTestimony-1,215",Non HTTP response code: java.io.FileNotFoundException,Non HTTP response message: C:\Users\HP\Desktop\Jmeter\avatar-1577909_960_720.png (The system cannot find the file specified),AddNewTestimony 9-1,text,false,,2602,0,1,15,http://64.227.132.109/api/CourseTestimony/courseTestimony/add,0,0,0
+1670604506741,93,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-2,text,true,,278,532,1,14,http://64.227.132.109/api/CorporateApplication,93,0,39
+1670604506787,108,"AddIndustrialPartners-1,254",200,OK,AddIndustrialPartners 14-1,text,true,,24935,342,1,14,http://64.227.132.109/uploads/image-1662449912659.xls,67,0,0
+1670604506615,392,AdminLogin-754,200,OK,AdminLogin 7-1,text,true,,553,454,1,15,http://64.227.132.109/api/login,391,0,41
+1670604506544,522,ApplyCourses-455,200,OK,ApplyCourses 2-1,text,true,,2783,398,1,16,http://64.227.132.109/LandingPage/singlecourses/61dc255f3b4aa2295f884131,522,0,40
+1670604506705,438,"AddAdminUsers-1,334",200,OK,AddAdminUsers 19-1,text,true,,28767,339,1,17,http://64.227.132.109/api/signup/AdminList,355,0,41
+1670604506699,445,"AddStaffs-1,306",200,OK,AddStaffs 18-1,text,true,,11867,324,1,17,http://64.227.132.109/api/staff,445,0,44
+1670604506696,481,"AddEvents-1,303",200,OK,AddEvents 17-1,text,true,,38320,325,1,16,http://64.227.132.109/api/events,207,0,48
+1670604506837,360,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-3,text,true,,278,522,4,16,http://64.227.132.109/api/CorporateApplication,360,0,37
+1670604506936,264,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-4,text,true,,278,532,3,15,http://64.227.132.109/api/CorporateApplication,264,0,40
+1670604506818,399,"AddPatron-1,293",200,OK,AddPatron 16-1,text,true,,13094,340,1,14,http://64.227.132.109/uploads/image-1647614033758.html,399,0,0
+1670604506896,322,"AddIndustrialPartners-1,253",200,OK,AddIndustrialPartners 14-1,text,true,,10262,343,1,14,http://64.227.132.109/uploads/image-1647614406059.html,321,0,0
+1670604507133,86,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-6,text,true,,278,522,2,14,http://64.227.132.109/api/CorporateApplication,86,0,44
+1670604507218,3,"AddPatron-1,299",Non HTTP response code: java.io.FileNotFoundException,Non HTTP response message: C:\Users\HP\Desktop\Jmeter\download.png (The system cannot find the file specified),AddPatron 16-1,text,false,,2588,0,1,13,http://64.227.132.109/api/patronadmin/add,0,0,0
+1670604507219,4,"AddIndustrialPartners-1,255",Non HTTP response code: java.io.FileNotFoundException,Non HTTP response message: C:\Users\HP\Desktop\Jmeter\download.png (The system cannot find the file specified),AddIndustrialPartners 14-1,text,false,,2588,0,1,12,http://64.227.132.109/api/industrypartneradmin/add,0,0,0
+1670604507067,181,"ApplyCourses-1,110",200,OK,ApplyCourses 2-1,text,true,,2438,397,1,12,http://64.227.132.109/api/course/courseSingle/61dc255f3b4aa2295f884131,181,0,0
+1670604507144,200,"AddAdminUsers-1,335",200,OK,AddAdminUsers 19-1,text,true,,277,601,1,12,http://64.227.132.109/api/signup,200,0,0
+1670604507177,332,"AddEvents-1,304",200,OK,AddEvents 17-1,text,true,,277,807,1,13,http://64.227.132.109/api/eventsadmin/add,332,0,0
+1670604506671,907,"DownloadPartnershipApplication-1,223",200,OK,DownloadPartnershipApplication 13-1,text,true,,127978,354,1,14,http://64.227.132.109/api/PartnershipApplication/partner,268,0,40
+1670604507529,75,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-10,text,true,,278,528,5,13,http://64.227.132.109/api/CorporateApplication,75,0,37
+1670604507007,626,AdminLogin-768,200,OK,AdminLogin 7-1,text,true,,2783,357,1,12,http://64.227.132.109/adminpage,626,0,0
+1670604506607,1065,ContactUs-722,200,OK,ContactUs 6-1,text,true,,3329,542,1,11,http://64.227.132.109/api/contact/contactRegister,818,0,44
+1670604507673,43,ContactUs-723,200,OK,ContactUs 6-1,text,true,,2783,369,1,11,http://64.227.132.109/LandingPage/contactus,43,0,0
+1670604506592,1126,ICSETEventApply-678,200,OK,ICSETEventApply 5-1,text,true,,439,592,1,10,http://64.227.132.109/api/registrationevent/eventRegister,1126,0,1056
+1670604507428,317,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-9,text,true,,278,520,4,10,http://64.227.132.109/api/CorporateApplication,316,0,37
+1670604507509,247,"AddEvents-1,305",200,OK,AddEvents 17-1,text,true,,38729,325,1,9,http://64.227.132.109/api/events,71,0,0
+1670604507718,40,ICSETEventApply-679,200,OK,ICSETEventApply 5-1,text,true,,2783,390,1,8,http://64.227.132.109/LandingPage/event/61d88c6022c79c40406009e7,40,0,0
+1670604507345,735,"AddAdminUsers-1,336",200,OK,AddAdminUsers 19-1,text,true,,29024,339,1,7,http://64.227.132.109/api/signup/AdminList,101,0,0
+1670604507034,1087,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-5,text,true,,278,514,3,6,http://64.227.132.109/api/CorporateApplication,1087,0,1050
+1670604506648,1479,"DownloadUserRegistration-1,217",200,OK,DownloadUserRegistration 10-1,text,true,,139378,360,1,5,http://64.227.132.109/api/registration/registercourseList,355,0,41
+1670604506613,1643,"AddNewCourse-1,199",200,OK,AddCourse 8-1,text,true,,28619,326,1,4,http://64.227.132.109/api/course,1142,0,1050
+1670604508256,7,"AddNewCourse-1,210",Non HTTP response code: java.io.FileNotFoundException,Non HTTP response message: C:\Users\HP\Desktop\Jmeter\avatar-1577909_960_720.png (The system cannot find the file specified),AddCourse 8-1,text,false,,2602,0,1,4,http://64.227.132.109/api/course/Course/add,0,0,0
+1670604507233,1089,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-7,text,true,,278,516,2,3,http://64.227.132.109/api/CorporateApplication,1089,0,1051
+1670604506665,3923,"DownloadCorporateMembership-1,221",200,OK,DownloadCorporateMembership 12-1,text,true,,207691,347,1,2,http://64.227.132.109/api/CorporateApplication/data,582,0,41
+1670604507333,5116,RegisterCorporateMembership-585,200,OK,RegisterCorporateMembership 3-8,text,true,,278,524,1,1,http://64.227.132.109/api/CorporateApplication,5116,0,5077
+1670604512454,78,"AdminLogout-1,442",200,OK,Adminogout 1-1,text,true,,1414,341,1,1,http://64.227.132.109/assets/material/img/down-arrow-dark.svg,78,0,39
+1670604512533,4231,"AdminLogout-1,453",200,OK,Adminogout 1-1,text,true,,28619,320,1,1,http://64.227.132.109/api/course,92,0,0
+1670604516765,675,"AdminLogout-1,458",200,OK,Adminogout 1-1,text,true,,15040,330,1,1,http://64.227.132.109/api/hometestimonials,563,0,0
+1670604517441,398,"AdminLogout-1,455",200,OK,Adminogout 1-1,text,true,,28619,320,1,1,http://64.227.132.109/api/course,92,0,0
+1670604517840,626,"AdminLogout-1,456",200,OK,Adminogout 1-1,text,true,,28619,320,1,1,http://64.227.132.109/api/course,125,0,0
+1670604518467,207,"AdminLogout-1,460",200,OK,Adminogout 1-1,text,true,,8892,389,1,1,http://64.227.132.109/nucleo-icons.8b3a763416dc36ab.woff2,136,0,0
+1670604518674,155179,"AdminLogout-1,461",206,Partial Content,Adminogout 1-1,bin,true,,4033780,404,1,1,http://64.227.132.109/assets/banner-home/video/banner.m4v,112,0,0
+1670604673854,76,"AdminLogout-1,459",200,OK,Adminogout 1-1,text,true,,8892,397,1,1,http://64.227.132.109/assets/admin/fonts/nucleo-icons.woff2,76,0,37
+1670604673931,526,"AdminLogout-1,454",200,OK,Adminogout 1-1,text,true,,38729,320,1,1,http://64.227.132.109/api/events,94,0,0
+1670604674458,439,"AdminLogout-1,457",200,OK,Adminogout 1-1,text,true,,15040,330,1,1,http://64.227.132.109/api/hometestimonials,95,0,0
+1670604674897,3285,"AdminLogout-1,475",200,OK,Adminogout 1-1,text,true,,112807,334,1,1,http://64.227.132.109/uploads/file1-1670396733705.jfif,40,0,0
+1670604678183,8085,"AdminLogout-1,462",200,OK,Adminogout 1-1,text,true,,318818,332,1,1,http://64.227.132.109/uploads/image-1641970430360.38,87,0,0
