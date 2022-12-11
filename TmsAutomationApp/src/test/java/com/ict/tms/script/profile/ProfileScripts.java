@@ -3,6 +3,7 @@ package com.ict.tms.script.profile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import com.ict.tms.config.AbstractBaseTest;
@@ -24,7 +25,7 @@ public class ProfileScripts extends AbstractBaseTest {
 		// Clicks login link
 		App().Page().ofHome().clickLoginLink();
 
-		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(homeUrl + AppConstants.URL_LOGIN));
+		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(Prop().getProperty(AppConstants.URL_LOGIN)));
 
 		// Sending trainer login credentials
 		App().Page().ofLogin().sendEmailAddress(email);
@@ -43,7 +44,7 @@ public class ProfileScripts extends AbstractBaseTest {
 		Assert.assertNotNull(App().Page().ofProfile().getTrainerQualification());
 		Assert.assertNotNull(App().Page().ofProfile().getTrainerSkillsets());
 		Assert.assertNotNull(App().Page().ofProfile().getTrainerProfileImage());
-		Assert.assertTrue(App().Page().ofProfile().isEditProfileButtonVisible());
+		AssertJUnit.assertTrue(App().Page().ofProfile().isEditProfileButtonVisible());
 
 		// Trainer logout
 		App().Page().ofHeadSection().clickLogout();

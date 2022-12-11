@@ -17,10 +17,15 @@ public interface AppConstants {
 	public static final String EXL_COL_COMPANY = "company";
 	public static final String EXL_COL_PROFILEIMAGE = "profileImage";
 	
-	public static final String URL_HOME = "";
-	public static final String URL_LOGIN = "login";
-	public static final String URL_PROFILE = "profile";
-	public static final String URL_EDITPROFILE = "editProfile";
+//	public static final String URL_HOME = "";
+	//public static final String URL_LOGIN = "login";
+//	public static final String URL_PROFILE = "profile";
+//	public static final String URL_EDITPROFILE = "editProfile";
+	
+	public static final String URL_TRAINER_PROFILE = "url.trainer.profile";
+	public static final String URL_EDIT_PROFILE = "url.edit.profile";
+	public static final String URL_HOME = "url.home";
+	public static final String URL_LOGIN = "url.login";
 	
 	
 }

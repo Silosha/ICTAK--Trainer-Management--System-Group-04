@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TrainerProfileSuite">
+  <test thread-count="5" name="TrainerProfileTest">
+    <classes>
+      <class name="com.ict.tms.script.profile.ProfileScripts"/>
+    </classes>
+  </test> <!-- TrainerProfileTest -->
+</suite> <!-- TrainerProfileSuite -->

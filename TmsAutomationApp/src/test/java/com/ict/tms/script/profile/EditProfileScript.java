@@ -26,7 +26,7 @@ public class EditProfileScript extends AbstractBaseTest{
 		// Clicks login link
 		App().Page().ofHome().clickLoginLink();
 		
-		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(url+AppConstants.URL_LOGIN));
+		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(Prop().getProperty(AppConstants.URL_LOGIN)));
 		
 		// Sending trainer login credentials
 		App().Page().ofLogin().sendEmailAddress(emailId);
@@ -40,7 +40,7 @@ public class EditProfileScript extends AbstractBaseTest{
 		App().Page().ofProfile().clickEditProfileButton();
 		
 		//Edit profile page will rendered with Edit profile form
-		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(url+AppConstants.URL_EDITPROFILE));
+		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(Prop().getProperty(AppConstants.URL_EDIT_PROFILE)));
 		
 		// Reading trainer test data from excel file
 		ExcelUtil excelUtil = new ExcelUtil(AppConstants.TRAINER_TEST_DATA_EXCEL_FILE);
@@ -70,7 +70,7 @@ public class EditProfileScript extends AbstractBaseTest{
 		App().Page().ofEditProfilePage().clickEditButton();
 		
 		// Trainer profile page will be rendered
-		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(url+AppConstants.URL_PROFILE));		
+		Flow().ofWebDriverWait(10L).until(ExpectedConditions.urlToBe(Prop().getProperty(AppConstants.URL_TRAINER_PROFILE)));		
 		
 		// Asserting the trainer profile details
 		Assert.assertEquals(App().Page().ofProfile().getTrainerName(), tdName);

@@ -1,6 +1,8 @@
 package com.ict.tms.script.login;
 
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ict.tms.config.AbstractBaseTest;
+import com.ict.tms.constants.AppConstants;
 import com.ict.tms.pages.LoginPage;
 
 /**
@@ -36,10 +39,10 @@ public class LoginScripts extends AbstractBaseTest {
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("app-admindash")));
 		
-		String expected = "https://trainermanagement.herokuapp.com/profile";
+		String expected = Prop().getProperty(AppConstants.URL_TRAINER_PROFILE);
 		String currentUrl = Flow().getCurrentUrl();
 		
-		Assert.assertEquals(expected, currentUrl);
+		AssertJUnit.assertEquals(expected, currentUrl);
 	}
 
 }
